@@ -1,6 +1,6 @@
 const containerEl = document.getElementById("container");
 
-const careers = ["YouTuber", "Web developer", "Freelancer", "Instructor"];
+const careers = ["Web developer", "Video editor", "Freelancer"];
 let careerIndex = 0;
 let characterIndex = 0;
 
@@ -30,12 +30,14 @@ function updateText() {
   setTimeout(updateText, 400);
 }
 
-/* 
+/* Article correction version 1. only corrects I.
+
 <h1>I am ${careers[careerIndex].slice(0, 1) === "I" ? "an" : "a"}
 ${careers[careerIndex].slice(0, characterIndex)}</h1>
 */
 
-/* 
+/* Article correction version 2. corrects all article but inefficient.
+
 const firstLetter = careers[careerIndex][0].toLowerCase();
 I am ${["a", "e", "i", "o", "u"].includes(firstLetter) ? "an" : "a"}
 ${careers[careerIndex].slice(0, characterIndex)}
