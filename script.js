@@ -1,6 +1,6 @@
 const containerEl = document.getElementById("container");
 
-const careers = ["Web developer", "Video editor", "Freelancer"];
+const careers = ["Web developer", "Video editor", "Freelancer" , "Learner"];
 let careerIndex = 0;
 let characterIndex = 0;
 
